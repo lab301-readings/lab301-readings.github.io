@@ -1,22 +1,35 @@
-# Compiled class file
-*.class
 
-# Log file
-*.log
+# Created by https://www.gitignore.io/api/macos
 
-# BlueJ files
-*.ctxt
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Icon must end with two \r
+Icon
 
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# End of https://www.gitignore.io/api/macos
+
+# debug file
+_site
