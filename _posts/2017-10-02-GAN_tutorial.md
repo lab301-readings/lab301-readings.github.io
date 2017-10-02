@@ -90,7 +90,7 @@ $J^{(G)}=-\cfrac{1}{2}E_zlogD(G(z))$
 
 ### A significant problem
 
-**Non-convergence**
+`**Non-convergence**`
 This problem usually happen when the ability of discriminator is great. (So the gradient of V is always vanishing) It is obvious that when D(G(z)) is near zero, the gradient is also near zero.
 ![convergence problem](https://i.imgur.com/26HACno.png)
 **Figure 8:** Convergence performance of different methods
