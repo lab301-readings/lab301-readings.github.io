@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      Generative Adversarial Networks
 subtitle:   GAN
@@ -10,8 +10,8 @@ tags:
     - computer vision
     - deep learning
     - GAN
-
 ---
+
 # Outline
 ## Generative Model
 >- **Density estimation**
