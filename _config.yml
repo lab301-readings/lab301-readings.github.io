@@ -1,13 +1,13 @@
 # Site settings
-title: zcliao-lab Blog
-SEOTitle: 视觉和深度学习实验室 | zcliao-lab Blog
+title: lab301 Blog
+SEOTitle: 视觉和深度学习实验室 | lab301 Blog
 header-img: img/post-bg-desk.jpg
 email: zcliao_lab@outlook.com
 description: "A lab focusing on computer vision and deep learning"
-keyword: "zcliao-lab Blog, 301-lab Blog, computer vision, deep learning"
-url: "http://zcliao-lab.github.io"          # your host, for absolute URL
+keyword: "zcliao-lab Blog, lab301 Blog, computer vision, deep learning"
+url: "http://lab301-readings.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/zcliao-lab/zcliao-lab.github.io.git" # you code repository
+github_repo: "https://github.com/lab301-readings/lab301-readings.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -20,7 +20,7 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 RSS: false
 # weibo_username:     
 zhihu_username:     username
-github_username:    zcliao-lab
+github_username:    lab301-readings
 facebook_username:  username
 jianshu_username:   username_id
 #twitter_username:   username
