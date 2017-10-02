@@ -4,7 +4,7 @@ title:      Generative Adversarial Networks
 subtitle:   GAN
 date:       2017-09-29
 author:     Tab
-header-img: img/post-bg-ios9-web.jpg
+header-img: img/GAN_homepage.jpg
 catalog: true
 tags:
     - computer vision
