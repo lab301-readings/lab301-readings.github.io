@@ -88,7 +88,7 @@ $J^{(G)}=-\cfrac{1}{2}E_ze^{\sigma^{-1}(D(G(z)))}$
 
 $J^{(G)}=-\cfrac{1}{2}E_zlogD(G(z))$
 
-**A significant problem**
+### A significant problem
 
 **Non-convergence**
 This problem usually happen when the ability of discriminator is great. (So the gradient of V is always vanishing) It is obvious that when D(G(z)) is near zero, the gradient is also near zero.
@@ -136,11 +136,12 @@ cross_entropy(.9, discriminator(data))+cross_entropy(0.,discriminator(samples))
 - Do not smooth negative labels
 
 $D^*(x)=\cfrac{(1-\alpha)p_{data}(x)+\beta p_{model}(x)}{p_{data}(x)+p_{model}(x)}$
+
 According to the discriminator's loss, the best discriminator should implement the function $D^*(x)$. So if we only decrease the coefficient of $p_{data}$, it'll just have the confidence of D decline. However, if we get a positive $\beta$, it is likely that there exists a peak (local optimum value)  which leads to a trend of generating wrong samples.
 
 ---
 
-###Virtual Batch Normalization
+### Virtual Batch Normalization
 
 ![Virtual Batch Normalization](https://i.imgur.com/YEZJoPQ.jpg)
 **Figure13:** correlation of samples in a batch caused by batch normalization
