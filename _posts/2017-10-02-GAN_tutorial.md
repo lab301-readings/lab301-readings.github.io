@@ -81,12 +81,15 @@ $J^{(D)}((\theta)^{(D)},(\theta)^{(G)})=-\cfrac{1}{2}E_{x\sim p_{data}}logD(x)-\
 **Figure 7:** Generator's minimax cost: $J^{(G)}=-J^{(D)}$
 
 **Maximum likelihood game (KL Divergence)**
+
 $J^{(G)}=-\cfrac{1}{2}E_ze^{\sigma^{-1}(D(G(z)))}$
 
 **Heuristic, non-saturating game**
+
 $J^{(G)}=-\cfrac{1}{2}E_zlogD(G(z))$
 
 **A significant problem**
+
 **Non-convergence**
 This problem usually happen when the ability of discriminator is great. (So the gradient of V is always vanishing) It is obvious that when D(G(z)) is near zero, the gradient is also near zero.
 ![convergence problem](https://i.imgur.com/26HACno.png)
@@ -116,7 +119,7 @@ This problem usually happen when the ability of discriminator is great. (So the 
 ## Tips and Tricks
 ---
 ### Train with labels
-- Generating condition on labels: P(y|x)
+- Generating condition on labels: P(y\|x)
 - Training with labels: P(x, y)
 
 ---
@@ -131,12 +134,14 @@ cross_entropy(1., discriminator(data))+cross_entropy(0.,discriminator(samples))
 cross_entropy(.9, discriminator(data))+cross_entropy(0.,discriminator(samples))
 ```
 - Do not smooth negative labels
+
 $D^*(x)=\cfrac{(1-\alpha)p_{data}(x)+\beta p_{model}(x)}{p_{data}(x)+p_{model}(x)}$
 According to the discriminator's loss, the best discriminator should implement the function $D^*(x)$. So if we only decrease the coefficient of $p_{data}$, it'll just have the confidence of D decline. However, if we get a positive $\beta$, it is likely that there exists a peak (local optimum value)  which leads to a trend of generating wrong samples.
 
 ---
 
 ###Virtual Batch Normalization
+
 ![Virtual Batch Normalization](https://i.imgur.com/YEZJoPQ.jpg)
 **Figure13:** correlation of samples in a batch caused by batch normalization
 
