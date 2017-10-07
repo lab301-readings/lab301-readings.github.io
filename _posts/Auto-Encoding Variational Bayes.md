@@ -8,6 +8,7 @@ catalog: true
 tags:
     - Mathematical derivation
     - VAE
+    - machine learning
 
 ---
 #Outline

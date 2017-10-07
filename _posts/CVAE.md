@@ -7,6 +7,8 @@ author:     Chaowei FANG
 catalog:    true
 tags:
     - CVAE
+    - machine learning
+    - generative model
 
 ---
 
