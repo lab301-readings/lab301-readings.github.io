@@ -41,15 +41,14 @@ tags:
 ![](https://i.imgur.com/lIVRC6e.png)
 
 ---
----
 # Bilateral Grid
 ![](https://i.imgur.com/JhZbMLJ.png)
 
 ---
 # Bilateral Grid
 ![](https://i.imgur.com/KXzvShP.png)
----
 
+---
 # Bilateral Grid
 ![](https://i.imgur.com/EDKMcnM.png)
 
@@ -68,19 +67,21 @@ tags:
 ---
 # Bilateral Grid
 ![](https://i.imgur.com/mKZhUUY.png)
+
 ---
 # Local Affine Transformation
 ![](https://i.imgur.com/glbKmXD.png)
 ![](https://i.imgur.com/hFNZZIP.png)
 
 ---
-#Network FrameWork
+# Network FrameWork
 ![](https://i.imgur.com/pW0gdqv.png)
 **Fusion and Linear Prediction**:
  ![](https://i.imgur.com/OAa4VwU.png)
  ![](https://i.imgur.com/qTThKeG.png)
+
 ---
-#Network FrameWork
+# Network FrameWork
 ![](https://i.imgur.com/pW0gdqv.png)
 **Upsampling with a trainable slicing layer**:
 ![](https://i.imgur.com/3z33UUf.png)
@@ -88,13 +89,13 @@ slicing(tri-linearly interpolating):
 (16x16x8)x12 ----> 256x256x12(input size: 256x256x3)
 
 ---
-#Network FrameWork
+# Network FrameWork
 ![](https://i.imgur.com/pW0gdqv.png)
 **Local Affine Transformation**:
 ![](https://i.imgur.com/4hE5Yz4.png)
 
 ---
 ---
-#Results
+# Results
 ![](https://i.imgur.com/B2GyTzb.png)
----
+
