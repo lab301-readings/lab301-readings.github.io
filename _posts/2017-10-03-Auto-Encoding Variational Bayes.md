@@ -11,11 +11,7 @@ tags:
     - machine learning
 
 ---
-#Outline
 
-[TOC]
-
----
 # Introduction
 This paper is written by Diederik P. Kingma, Max Welling and this report is done by Yan Zheyu from Liao's Group in Zhejiang University. Because the writer of paper *Tutorial on Variational Autoencoder, C. Doersch, 2016* has a deep insight of **VAE**, this report will not focus on how to understand **VAE**, but will put more efforts on the mathematical part. 
 
