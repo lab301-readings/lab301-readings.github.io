@@ -34,7 +34,7 @@ How can we perform efficient inference and learning in directed probabilistic mo
 # Flowchart of VAE  
 &emsp;
 ![Flowchart of VAE][1]
-<center> **Fiure1 Flowchart of VAE**[^Flowchart] </center>
+<center>Figure1: Flowchart of VAE</center>
 ## Description
 During the training part, we start with a input vector **x**. After the encoder, we get the mean of **z** (μ), and var of **z** in the log form. We use the **reparameterize trick** intorduced in the next section to reparmaeterize a **randomly sampled** **z** from a certain distribution, and put the reparameterized **z** into the Decoderto get the output. We hope the output to be similar to the input.
 In the test part, the Encoder is neglected and a  random input is given to the decoder. [^MoreDes] 
