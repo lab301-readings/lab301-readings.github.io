@@ -12,7 +12,7 @@ github_repo: "https://github.com/lab301-readings/lab301-readings.github.io.git" 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: " We're here to put a dent in the universe. "
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/ZJU_LOGO.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
