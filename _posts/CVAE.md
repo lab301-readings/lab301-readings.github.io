@@ -1,13 +1,14 @@
 ---
-layout: post  
-title: Conditional Variational Encoder  
-date:  2017-09-29  
-author: Chaowei FANG  
-catalog: true  
+layout:     post
+title:      Conditional Variational Encoder
+subtitle:   CVAE
+date:       2017-09-29
+author:     Chaowei FANG
+catalog:    true
 tags:
-- CVAE
----
+    - CVAE
 
+---
 
 # CVAE
 >- Generative model with conditional information (labels or attributes)

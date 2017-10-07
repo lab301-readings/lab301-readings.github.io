@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      Auto-Encoding Variational Bayes
 subtitle:   VAE
@@ -8,8 +8,6 @@ catalog: true
 tags:
     - Mathematical derivation
     - VAE
-categories:
-    - Machine Learning
 
 ---
 #Outline
