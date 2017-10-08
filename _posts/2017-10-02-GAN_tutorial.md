@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Generative Adversarial Networks
+title:      Generative Adversarial Networks Tutorials
 subtitle:   GAN
 date:       2017-09-29
 author:     Tab
