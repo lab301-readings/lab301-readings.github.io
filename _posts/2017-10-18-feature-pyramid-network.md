@@ -1,14 +1,13 @@
 ---
 layout:     post
 title:      Feature Pyramid Networks for Object Detection
-subtitle: 
 date:       2017-10-11
 author:     zcy
-catalog:    true
+catalog: true
 tags:
-	- computer vision
-	- pyramid network
-	- object detection
+    - computer vision
+    - pyramid network
+    - object detection
 
 ---
 
