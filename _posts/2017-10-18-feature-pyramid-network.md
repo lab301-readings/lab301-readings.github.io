@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Feature Pyramid Networks for Object Detection
-date: 2017-10-11 19:50:59
-author: Zhang Chengyi
+title:  Feature Pyramid Networks for Object Detection
+date:   2017-10-11
+author: zcy
 catalog: true
 tags:
 	- computer vision

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Associative Embedding: End-to-End Learning for Joint Detection and Grouping
+title:      Associative Embedding
 subtitle:   joint detection and grouping
 date:       2017-10-18
 author:     Stephen Zhou
