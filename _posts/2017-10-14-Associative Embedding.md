@@ -95,16 +95,12 @@ Pretrained on MS COCO
 **Figure 15:** Semantic instance segmentation results (mAP) on PASCAL VOC 2012 validation images
 
 # conclusion
->-
-
- - 
-
-列表项
----
-
- introduce associative embedding, a new method for single- stage, end-to-end joint detection and grouping
+>- introduce associative embedding, a new method for single- stage, end-to-end joint detection and grouping
 - associative embedding can be easily integrated with other state-of- the-art architectures that produces pixelwise predictions
 - apply associative embedding to multiperson pose estimation and achieve state of the art results on two standard benchmarks
+
+
+
 
 
 
