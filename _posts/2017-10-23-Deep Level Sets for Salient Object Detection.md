@@ -53,7 +53,7 @@ Guided Image Filtering uses one image as a filter to transform a input picture. 
 This method uses superpixel as a filter. Superpixel itself **better preserves the edge** and guided image filtering also performs well in edge preserving, so the incorporation of the two methods tends to predict a more precise edge.  
 
 Realization of this method seems to be tricky but a famous approach is used, which is illustrated below
-<center>![G_S_F][3]</center>
+![G_S_F][3]
 
 A graph is created for superpixels. Nodes are the superpixels and two nodes share an edge if the corresponding superpixels share same pixels. *n-Ring* is defined as a set of superpixels whose distance in the graph to the target superpixel is n. Covolutions are done ring by ring.
 *Lechao Cheng* is interested in this method and thinks superpixels have various applications. However, this paper doesn't describe how this convolution is done in coding, which is a great challenge for us. We intend to turn to Prof. Wang for help.
@@ -94,7 +94,7 @@ However, from my point of view, two main questions should be asked:
 1. [Deep Level Sets for Salient Object Detection](http://openaccess.thecvf.com/content_cvpr_2017/papers/Hu_Deep_Level_Sets_CVPR_2017_paper.pdf)
 
 
-[^lip]: functions that $|f(x_1) - f(x_2)| \leq ||x_1 - x_2||$
+[^lip]: functions that $\|f(x_1) - f(x_2)\| \leq \|\|x_1 - x_2\|\|$
 
 
   [1]: https://www.z4a.net/images/2017/10/19/pipeline.png
