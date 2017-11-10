@@ -42,12 +42,14 @@ so that some infomation could be ignored.
     + `tanh(weights_1 + image)` is a classical convolution with tanh activation function.
     + `sigmoid(weights_2 + image)` are the gate values (0 = gate closed, 1 = gate open).
     + `weights_1` and `weights_2` are learned.
+
 # Conditional PixelCNNs
 + When generating images, they do not only want to condition the previous values, but also on a laten vector `h` that describes the image to generate.
 + The new image distribution becomes: `p(image) = <product> p(pixel i | pixel 1, pixel 2, ..., pixel i-1, h)`.
 + To implement that, they simply modify the previously mentioned gated convolution, adding `h` to it:
     + Equation: `output image = tanh(weights_1 + image + weights_2 . h) <element-wise product> sigmoid(weights_3 + image + weights_4 . h)`
     + `.` denotes here the matrix-vector multiplication.
+
 # PixelCNN Autoencoder
 + The decoder in a standard autoencoder can be replaced by a PixelCNN, creating a PixelCNN-Autoencoder.
 
