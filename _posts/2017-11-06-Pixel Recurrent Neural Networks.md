@@ -103,7 +103,8 @@ The authors also applied **ResNet** and **Masked Convoltion**. ResNet is popular
 # Specifications of Models
 The first layer is a 7 × 7 convolution that uses the mask of type A. The two types of LSTM networks then use a variable number of recurrent layers. The input-to-state convolution in this layer uses a mask of type B, whereas the state-to-state convolution is not masked. The PixelCNN uses convolutions of size 3 × 3 with a mask of type B. The top feature map is then passed through a couple of layers consisting of a Rectified Linear Unit (ReLU) and a 1×1 convolution.
 
-|RowLSTM| Diagonal BiSTM|
+|Row LSTM| Diagonal BiSTM|
+|:---------:|:----------:|
 
 |7 x 7 conv mask A|
 |:--:|
