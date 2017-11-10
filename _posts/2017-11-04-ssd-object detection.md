@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      SSD: Single Shot MultiBox Detector
+title:      SSD--Single Shot MultiBox Detector
 subtitle:   SSD
 date:       2017-11-04
 author:     stephen zhou
