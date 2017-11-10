@@ -1,4 +1,3 @@
-# Pixel Recurrent Neural Networks
 ---
 layout:     post
 title:      Pixel Recurrent Neural Networks
@@ -45,11 +44,13 @@ We often takes values (intensity) of each pixel as continuous variables, thus re
 ## Row LSTM
 The Row LSTM is a unidirectional layer that processes the image row by row from top to bottom computing features for a whole row at once; the computation is performed with a one-dimensional convolution. The kernel of the one-dimensional convolution has size k × 1 where k ≥ 3; the larger the value of k the broader the context that is captured.
 The perception domain of one pixel when k = 3 is depicted below.
+
 |i-2|i-2|i-2|i-2|i-2|
 |:---:|:---:|:---:|:---:|:---:|
 |/|i-1|i-1|i-1|/|
 |/|/|i|/|/|
 |/|/|/|/|/|
+
 It is of great importance that, **the weight sharing** in the convolution ensures translation invariance of the computed features along each row.
 [LSTM][1] (if you are not familiar with LSTM, please click [this link][1]) has three gates and one latent value which can be depicted as $\boldsymbol o_i, \boldsymbol f_i, \boldsymbol i_i \boldsymbol g_i$, where $\boldsymbol i_i$ is the latent value and others are gates.
 With two learnable Weights $\boldsymbol K^{ss}$ and $\boldsymbol K^{is}$, the four numbers mentioned above and the output of a **LSTM** cell, **hidden state** (which is also the output of the whole model) and **cell state**, can be depicted as:
@@ -62,22 +63,27 @@ where $\circledast $ is convolution and $\odot$ is elementwise multipilication.
 ## Diagonal BiLSTM
 The calculation method of Diagonal BiLSTM is the same as Row LSTM, but the perception domain is different.
 The perception domain of Diagonal LSTM is depicted as below and a BiLSTM takes the other side.
+
 |i-4|i-3|i-2|/|/|
 |:---:|:---:|:---:|:---:|:---:|
 |i-3|i-2|i-1|/|/|
 |i-2|i-1|i|/|/|
 |/|/|/|/|/|
+
 The author also provided ad trick for this method. By move each line one pixel step by step we can get:
+
 |i-4|i-3|i-2|/|/|
 |:---:|:---:|:---:|:---:|:---:|
 |(i-4)|i-3|i-2|i-1|/|
 |(i-4)|(i-3)|i-2|i-1|i|
 |/|/|/|/|/|
+
 then a convolution of kernel 2x1 can be applied to it.
 
 ## Other Methods
 The authors also applied **ResNet** and **Masked Convoltion**. ResNet is popular and doesn't require introduction. The authors defined two masks for convolution, which are depicted below (where x is the perception domain):
-<center>**Mask A**</center>
+<center>Mask A</center>
+
 |x|x|x|x|x|
 |:---:|:---:|:---:|:---:|:---:|
 |x|x|x|x|x|x|
@@ -85,7 +91,8 @@ The authors also applied **ResNet** and **Masked Convoltion**. ResNet is popular
 |/|/|/|/|/|/|
 |/|/|/|/|/|
 
-<center>**Mask B**</center>
+<center>Mask B</center>
+
 |x|/|x|/|x|
 |:---:|:---:|:---:|:---:|:---:|
 |/|x|/|x|/|x|
@@ -95,6 +102,7 @@ The authors also applied **ResNet** and **Masked Convoltion**. ResNet is popular
 
 # Specifications of Models
 The first layer is a 7 × 7 convolution that uses the mask of type A. The two types of LSTM networks then use a variable number of recurrent layers. The input-to-state convolution in this layer uses a mask of type B, whereas the state-to-state convolution is not masked. The PixelCNN uses convolutions of size 3 × 3 with a mask of type B. The top feature map is then passed through a couple of layers consisting of a Rectified Linear Unit (ReLU) and a 1×1 convolution.
+
 |RowLSTM|Diagonal BiSTM|
 |:---:|:---:|
 
