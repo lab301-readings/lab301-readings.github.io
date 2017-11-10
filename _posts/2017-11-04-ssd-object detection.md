@@ -1,10 +1,9 @@
-﻿---
+---
 layout:     post
 title:      SSD: Single Shot MultiBox Detector
 subtitle:   SSD
-date:       2017-09-29
+date:       2017-11-04
 author:     stephen zhou
-header-img: img/post-bg-hacker.jpg
 catalog: true
 tags:
     - computer vision
@@ -12,15 +11,15 @@ tags:
     - object detection
 ---
 
-#related work
+# related work
 ![](https://i.imgur.com/91Xrk1v.png)
 **figure 1:** classic network of object detection
 
-#model
+# model
 ![](https://i.imgur.com/va1IK8u.png)
 **figure 2:** the confrontation between YOLO and SSD
 
-#details
+# details
 **Multi-scale feature maps for detection**
 
 **Convolutional predictors for detection:** 3x3 kernel   default boxes
@@ -32,7 +31,7 @@ mxn—>(c+4)kmn
 ![](https://i.imgur.com/kRD4QY1.png)
 **figure 3:** SSD working framework
 
-#loss
+# loss
 **Matching strategy:** every ground truth match with IOU higher than a threshold(0.5)
 
 **Loss function:**
@@ -40,7 +39,7 @@ mxn—>(c+4)kmn
 L(conf): softmax
 L(loc): Smooth L1 Loss
 
-#trick
+# trick
 **Negative mining:** ratio between the negatives and positives is at most 3:1
 
 **Data Augmentation:**
@@ -53,7 +52,7 @@ For every image:
 Then for every patch , horizontally flipped with probability of 0.5
 mAP update from 65.4% to 74.3%
 
-#experiment result
+# experiment result
 
 ![](https://i.imgur.com/G6SpcRB.png)
 **figure 4:** PASCAL VOC2007 test detection results
@@ -67,7 +66,7 @@ mAP update from 65.4% to 74.3%
 ![](https://i.imgur.com/DEJkKPu.jpg)
 **figure 7:** Detection examples on COCO test-dev with SSD512 model
 
-#model analysis
+# model analysis
 >- Data augmentation is crucial
 >- More default box shapes is better
 >- Atrous is faster
@@ -79,11 +78,7 @@ mAP update from 65.4% to 74.3%
 ![](https://i.imgur.com/ZqUBNtC.png)
 **figure 9:** Effects of using multiple output layers
 
-#conclusion
+# conclusion
 >- The core of SSD :predicting category scores and box offsets for a fixed set of default bounding boxes in multiscale
 >- Faster and better
-
-
-
-
 
