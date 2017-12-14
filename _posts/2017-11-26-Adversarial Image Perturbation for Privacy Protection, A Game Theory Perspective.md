@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      Adversarial Image Perturbation for Privacy Protection, A Game Theory Perspective
 subtitle:   AIP
@@ -92,7 +93,8 @@ The authors denote the above two basic processing steps as Proc.
 
 # Results of the Experiment
 This chart shows the accuracy (%) of recognizers in different image processing methods Vs vaccinations. The accuracy varies in different combination of strategies, so analysis based on game theory is needed.
-|User $\Theta^u$|Proc|T|N|B|C|TBNC|
+
+|User|Proc|T|N|B|C|TBNC|
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |GAMAN|4.0|6.6|15.0|22.2|16.7|9.9|
 |/T|2.5|2.3|11.6|18.5|7.2|4.9|
