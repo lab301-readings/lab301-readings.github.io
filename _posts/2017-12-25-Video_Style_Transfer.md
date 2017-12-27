@@ -64,7 +64,9 @@ As the gram matrix and objective function shows, one of our goals is to minimize
 
 # Experiments
 [![14.png](https://www.z4a.net/images/2017/12/27/14.png)](https://www.z4a.net/image/rToM0)
+
 > Here the optim method refers to the paper 'Artistic Style Transfer for Videos'.
+
 [![15.png](https://www.z4a.net/images/2017/12/27/15.png)](https://www.z4a.net/image/rTvvj)
 [![16.png](https://www.z4a.net/images/2017/12/27/16.png)](https://www.z4a.net/image/rTaiT)
 [![17.png](https://www.z4a.net/images/2017/12/27/17.png)](https://www.z4a.net/image/rTDrv)
@@ -72,7 +74,9 @@ As the gram matrix and objective function shows, one of our goals is to minimize
 [![19.png](https://www.z4a.net/images/2017/12/27/19.png)](https://www.z4a.net/image/rTFQn)
 [![20.png](https://www.z4a.net/images/2017/12/27/20.png)](https://www.z4a.net/image/rTR5C)
 [![21.png](https://www.z4a.net/images/2017/12/27/21.png)](https://www.z4a.net/image/rTrMN)
+
 > Because we do not need optical flow information when testing (only used in training instead), the result of the network is not likely to be influenced by the accuracy of optical flow results, whereas the optim method can't work without it.
+
 [![22.png](https://www.z4a.net/images/2017/12/27/22.png)](https://www.z4a.net/image/rTlVw)
 
 ---
