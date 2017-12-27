@@ -3,7 +3,7 @@ layout:    post
 title:     Non-local Neural Networks
 subtitle:  Non-local NN
 date:      2017-11-26
-author：   Blue
+author:    Blue
 catalog:   true
 tags:
     - Non-local NN
