@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      Neural Color Transfer between Images
 subtitle:   Neural Color Transfer
