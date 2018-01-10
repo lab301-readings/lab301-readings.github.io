@@ -3,7 +3,7 @@ title:      Learning to Segment Every Thing
 subtitle:   weight transfer
 date:       2017-12-09
 author:     stephen_zhou
-catalog: true
+catalog:    true
 tags:
     - computer vision
     - deep learning
